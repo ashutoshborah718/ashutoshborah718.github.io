@@ -2,721 +2,682 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Ashutosh Borah — Computer Vision Researcher</title>
-  <meta name="description" content="Ashutosh Borah — M.Tech scholar at NIT Silchar working on efficient deep learning for low-light image enhancement. Research, results, experience and resume." />
+  <meta name="description" content="Ashutosh Borah — M.Tech scholar at NIT Silchar working on efficient deep learning for low-light image enhancement." />
   <meta name="author" content="Ashutosh Borah" />
   <meta property="og:title" content="Ashutosh Borah — Computer Vision Researcher" />
-  <meta property="og:description" content="Efficient deep learning for low-light image enhancement. M.Tech, NIT Silchar." />
-  <meta property="og:type" content="website" />
+  <meta property="og:description" content="M.Tech, NIT Silchar · Efficient deep learning for low-light image enhancement." />
+  <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://ashutoshborah718.github.io/" />
   <meta property="og:image" content="https://github.com/ashutoshborah718.png" />
-  <meta name="theme-color" content="#0B1220" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1220'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23F5C26B' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D1117" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E3A8A'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23FFFFFF' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <style>
-    /* ---------- Design tokens ---------- */
+    /* ================= Tokens ================= */
     :root {
-      --bg: #FAFAF8;
+      --bg: #F6F7F9;
       --surface: #FFFFFF;
-      --surface-2: #F3F4F1;
-      --ink: #0B1220;
-      --ink-2: #2A3342;
-      --muted: #5E6878;
-      --faint: #8C95A3;
-      --line: #E4E6E1;
-      --line-strong: #CFD3CC;
-      --accent: #1F4FD1;
-      --accent-soft: #EAF0FD;
-      --gold: #B7791F;
-      --gold-soft: #FBF3E4;
-      --good: #12805C;
-      --good-soft: #E7F5EF;
-      --hero-from: #0B1220;
-      --hero-to: #F5C26B;
-      --shadow: 0 1px 2px rgba(11,18,32,.04), 0 8px 24px -12px rgba(11,18,32,.12);
-      --radius: 14px;
-      --maxw: 1080px;
+      --surface-2: #F1F3F6;
+      --ink: #111827;
+      --ink-2: #374151;
+      --muted: #6B7280;
+      --faint: #9CA3AF;
+      --line: #E5E7EB;
+      --line-2: #D1D5DB;
+      --accent: #1E40AF;
+      --accent-ink: #FFFFFF;
+      --accent-soft: #EEF2FF;
+      --accent-text: #1E40AF;
+      --ok: #047857;
+      --ok-soft: #ECFDF5;
+      --shadow: 0 1px 2px rgba(17,24,39,.05), 0 4px 16px -8px rgba(17,24,39,.10);
+      --r: 12px;
       color-scheme: light;
     }
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --bg: #0A0E16; --surface: #111723; --surface-2: #161D2B; --ink: #EEF1F6; --ink-2: #CBD2DD;
-        --muted: #98A2B3; --faint: #6B7586; --line: #1F2837; --line-strong: #2C3748;
-        --accent: #7DA2FF; --accent-soft: #16213A; --gold: #F0B95A; --gold-soft: #2A2214;
-        --good: #4CC79A; --good-soft: #10261E;
-        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.6);
+        --bg: #0D1117; --surface: #151B23; --surface-2: #1C232D; --ink: #E6EAF0; --ink-2: #C3CAD5;
+        --muted: #8D96A3; --faint: #687180; --line: #232B36; --line-2: #2F3946;
+        --accent: #3B6FE0; --accent-ink: #FFFFFF; --accent-soft: #172036; --accent-text: #8DB0FF;
+        --ok: #4ADE9B; --ok-soft: #10251C;
+        --shadow: 0 1px 2px rgba(0,0,0,.35), 0 6px 20px -10px rgba(0,0,0,.6);
         color-scheme: dark;
       }
     }
     :root[data-theme="dark"] {
-      --bg: #0A0E16; --surface: #111723; --surface-2: #161D2B; --ink: #EEF1F6; --ink-2: #CBD2DD;
-      --muted: #98A2B3; --faint: #6B7586; --line: #1F2837; --line-strong: #2C3748;
-      --accent: #7DA2FF; --accent-soft: #16213A; --gold: #F0B95A; --gold-soft: #2A2214;
-      --good: #4CC79A; --good-soft: #10261E;
-      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.6);
+      --bg: #0D1117; --surface: #151B23; --surface-2: #1C232D; --ink: #E6EAF0; --ink-2: #C3CAD5;
+      --muted: #8D96A3; --faint: #687180; --line: #232B36; --line-2: #2F3946;
+      --accent: #3B6FE0; --accent-ink: #FFFFFF; --accent-soft: #172036; --accent-text: #8DB0FF;
+      --ok: #4ADE9B; --ok-soft: #10251C;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 6px 20px -10px rgba(0,0,0,.6);
       color-scheme: dark;
     }
 
-    /* ---------- Base ---------- */
+    /* ================= Base ================= */
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    html, body { margin: 0; }
     body {
-      margin: 0; background: var(--bg); color: var(--ink);
+      background: var(--bg); color: var(--ink);
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
-      transition: background .25s ease, color .25s ease;
+      font-size: 15.5px; line-height: 1.6; -webkit-font-smoothing: antialiased;
     }
-    a { color: var(--accent); text-decoration: none; }
+    a { color: var(--accent-text); text-decoration: none; }
     a:hover { text-decoration: underline; text-underline-offset: 3px; }
-    img { max-width: 100%; display: block; }
-    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    button { font: inherit; color: inherit; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
-    .serif { font-family: 'Newsreader', Georgia, serif; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-    /* ---------- Nav ---------- */
-    .nav {
-      position: sticky; top: 0; z-index: 50;
-      background: color-mix(in srgb, var(--bg) 82%, transparent);
-      backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px);
-      border-bottom: 1px solid transparent; transition: border-color .2s ease;
-    }
-    .nav.scrolled { border-bottom-color: var(--line); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
-    .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; font-size: 15px; }
-    .brand:hover { text-decoration: none; }
-    .monogram {
-      width: 32px; height: 32px; border-radius: 9px; background: #0B1220; color: #F5C26B; border: 1px solid var(--line-strong);
-      display: grid; place-items: center; font-family: 'Newsreader', Georgia, serif; font-weight: 600; font-size: 15px;
-    }
-    .nav-links { display: flex; align-items: center; gap: 4px; }
-    .nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; padding: 8px 12px; border-radius: 8px; }
-    .nav-links a:hover, .nav-links a.active { color: var(--ink); background: var(--surface-2); text-decoration: none; }
-    .nav-actions { display: flex; align-items: center; gap: 8px; }
-    .icon-btn {
-      width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface);
-      color: var(--ink-2); display: grid; place-items: center; cursor: pointer; font-size: 15px;
-    }
-    .icon-btn:hover { border-color: var(--line-strong); }
-    .menu-btn { display: none; }
+    /* ================= App shell ================= */
+    .app { max-width: 1160px; margin: 0 auto; padding: 32px 24px; display: grid; grid-template-columns: 300px 1fr; gap: 28px; align-items: start; }
 
-    /* ---------- Buttons ---------- */
+    /* Profile sidebar */
+    .profile {
+      position: sticky; top: 32px; background: var(--surface); border: 1px solid var(--line);
+      border-radius: 16px; padding: 28px 24px 22px; box-shadow: var(--shadow);
+    }
+    .avatar { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); display: block; }
+    .p-name { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; margin: 18px 0 2px; }
+    .p-title { font-size: 14.5px; color: var(--ink-2); margin: 0; }
+    .p-org { font-size: 14px; color: var(--muted); margin: 2px 0 0; }
+    .status {
+      display: inline-flex; align-items: center; gap: 7px; margin-top: 14px; font-size: 12.5px; font-weight: 500;
+      color: var(--ok); background: var(--ok-soft); padding: 4px 10px; border-radius: 999px;
+    }
+    .status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+    .p-facts { list-style: none; padding: 0; margin: 20px 0; border-top: 1px solid var(--line); padding-top: 16px; }
+    .p-facts li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink-2); padding: 5px 0; min-width: 0; }
+    .p-facts i { width: 16px; text-align: center; color: var(--faint); font-size: 13.5px; flex-shrink: 0; }
+    .p-facts a { color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .p-facts a:hover { color: var(--accent-text); }
+    .p-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .btn {
-      display: inline-flex; align-items: center; gap: 9px; height: 44px; padding: 0 18px;
-      border-radius: 11px; font-size: 14.5px; font-weight: 600; border: 1px solid transparent;
-      cursor: pointer; transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 14px;
+      border-radius: 10px; font-size: 14px; font-weight: 600; border: 1px solid var(--line); background: var(--surface);
+      color: var(--ink); cursor: pointer; white-space: nowrap;
     }
-    .btn:hover { text-decoration: none; transform: translateY(-1px); }
-    .btn-primary { background: var(--ink); color: var(--bg); }
-    .btn-ghost { background: var(--surface); color: var(--ink); border-color: var(--line); }
-    .btn-ghost:hover { border-color: var(--line-strong); }
-    .btn-sm { height: 38px; padding: 0 14px; font-size: 13.5px; border-radius: 10px; }
+    .btn:hover { text-decoration: none; background: var(--surface-2); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .btn-primary:hover { background: var(--accent); filter: brightness(1.08); }
+    .p-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .icon-row { display: flex; gap: 6px; }
+    .icon-btn {
+      width: 36px; height: 36px; border-radius: 9px; display: grid; place-items: center; border: 1px solid var(--line);
+      background: var(--surface); color: var(--ink-2); cursor: pointer; font-size: 15px;
+    }
+    .icon-btn:hover { background: var(--surface-2); color: var(--ink); text-decoration: none; }
 
-    /* ---------- Hero ---------- */
-    .hero { padding: 72px 0 40px; }
-    .hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: center; }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600;
-      color: var(--good); background: var(--good-soft); padding: 6px 12px; border-radius: 999px;
+    /* Main panel */
+    .main { min-width: 0; }
+    .tabs {
+      position: sticky; top: 0; z-index: 20; display: flex; gap: 4px; padding: 6px; margin-bottom: 20px;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
     }
-    .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 var(--good); animation: pulse 2.2s infinite; }
-    @keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 55%, transparent); } 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
-    h1.name {
-      font-family: 'Newsreader', Georgia, serif; font-weight: 600; font-size: clamp(44px, 6vw, 68px);
-      line-height: 1.02; letter-spacing: -0.02em; margin: 22px 0 14px;
+    .tab {
+      flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px;
+      border: 0; background: transparent; border-radius: 9px; color: var(--muted); font-size: 14px; font-weight: 600; cursor: pointer;
     }
-    .role { font-size: 19px; color: var(--ink-2); margin: 0 0 18px; font-weight: 500; }
-    .role b { color: var(--ink); font-weight: 600; }
-    .lede { font-size: 16.5px; color: var(--muted); max-width: 590px; margin: 0 0 28px; }
-    .meta-row { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--muted); margin-bottom: 30px; }
-    .meta-row span { display: inline-flex; align-items: center; gap: 7px; }
-    .meta-row i { color: var(--faint); width: 14px; text-align: center; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
-    .socials { display: flex; gap: 8px; margin-top: 18px; }
-    .socials a {
-      width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
-      color: var(--ink-2); border: 1px solid var(--line); background: var(--surface); font-size: 16px;
-    }
-    .socials a:hover { color: var(--ink); border-color: var(--line-strong); text-decoration: none; }
+    .tab i { font-size: 13px; }
+    .tab:hover { color: var(--ink); background: var(--surface-2); }
+    .tab[aria-selected="true"] { color: var(--accent-ink); background: var(--accent); }
 
-    /* Hero visual: a transform grid going from dark to bright, a nod to NTR-Net */
-    .visual {
-      position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5;
-      background: var(--hero-from); box-shadow: var(--shadow); border: 1px solid var(--line);
-    }
-    .tgrid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(12, 1fr); }
-    .tgrid span { transition: opacity .6s ease; }
-    .portrait {
-      position: absolute; left: 50%; top: 44%; transform: translate(-50%, -50%);
-      width: 46%; aspect-ratio: 1; border-radius: 50%; object-fit: cover;
-      border: 4px solid rgba(255,255,255,.9); box-shadow: 0 18px 50px -12px rgba(0,0,0,.55);
-    }
-    .visual-cap {
-      position: absolute; left: 16px; right: 16px; bottom: 16px; padding: 12px 14px; border-radius: 12px;
-      background: rgba(11,18,32,.72); color: #E9EDF5; backdrop-filter: blur(6px); font-size: 12.5px; line-height: 1.45;
-    }
-    .visual-cap b { color: #F5C26B; font-weight: 600; }
+    .view { display: none; }
+    .view.active { display: block; animation: enter .22s ease-out; }
+    @keyframes enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
-    /* ---------- Stats ---------- */
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0 0; }
-    .stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 16px; }
-    .stat-num { font-family: 'Newsreader', Georgia, serif; font-size: 32px; font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; }
-    .stat-num small { font-size: 16px; color: var(--muted); font-weight: 500; margin-left: 3px; }
-    .stat-label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 30px; box-shadow: var(--shadow); }
+    .panel + .panel { margin-top: 18px; }
+    .v-title { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 4px; }
+    .v-sub { color: var(--muted); margin: 0 0 22px; font-size: 14.5px; }
+    .h-label { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 26px 0 12px; }
+    .h-label:first-child { margin-top: 0; }
+    p.body { color: var(--ink-2); margin: 0 0 14px; }
 
-    /* ---------- Sections ---------- */
-    section.block { padding: 80px 0 8px; }
-    .sec-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 30px; }
-    .sec-kicker { font-size: 12.5px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-    .sec-title { font-family: 'Newsreader', Georgia, serif; font-size: clamp(30px, 3.6vw, 40px); font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
-    .sec-sub { color: var(--muted); max-width: 460px; margin: 0; font-size: 15px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip { font-size: 13px; padding: 4px 10px; border-radius: 7px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); }
 
-    /* ---------- Feature (research) cards ---------- */
-    .feature {
-      background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow);
-      padding: 34px; margin-bottom: 22px;
+    /* Clickable list rows (research items) */
+    .list { display: grid; gap: 10px; }
+    .row {
+      display: grid; grid-template-columns: 44px 1fr auto; gap: 16px; align-items: center; width: 100%; text-align: left;
+      padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: pointer;
+      transition: border-color .15s ease, background .15s ease;
     }
-    .feature-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 14px; }
-    .tag {
-      font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
-      background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line);
-    }
-    .tag.gold { background: var(--gold-soft); color: var(--gold); border-color: transparent; }
-    .tag.live { background: var(--good-soft); color: var(--good); border-color: transparent; }
-    .feature h3 { font-family: 'Newsreader', Georgia, serif; font-size: 28px; line-height: 1.15; margin: 0 0 6px; font-weight: 600; }
-    .feature .sub { color: var(--muted); margin: 0 0 22px; font-size: 15.5px; }
-    .feature-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 34px; }
-    .feature h4 { font-size: 12.5px; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin: 0 0 12px; font-weight: 600; }
-    .points { list-style: none; padding: 0; margin: 0; }
-    .points li { position: relative; padding-left: 22px; margin-bottom: 11px; color: var(--ink-2); font-size: 15px; }
-    .points li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 7px; height: 7px; border-radius: 2px; background: var(--gold); }
+    .row:hover { border-color: var(--line-2); background: var(--surface-2); text-decoration: none; }
+    .row-icon { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent-text); font-size: 17px; }
+    .row-title { font-weight: 600; font-size: 15.5px; color: var(--ink); line-height: 1.35; }
+    .row-meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .row-desc { font-size: 14px; color: var(--ink-2); margin-top: 6px; }
+    .row-go { color: var(--faint); font-size: 13px; }
+    .badge { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 6px; margin-left: 6px; vertical-align: 2px; }
+    .badge.live { color: var(--ok); background: var(--ok-soft); }
+
+    /* Detail page */
+    .back { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; margin-bottom: 18px; }
+    .back:hover { color: var(--ink); }
+    .d-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .d-tag { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 6px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); }
+    .d-tag.accent { background: var(--accent-soft); color: var(--accent-text); border-color: transparent; }
+    .d-tag.live { background: var(--ok-soft); color: var(--ok); border-color: transparent; }
+    .d-title { font-size: 26px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2; margin: 0 0 8px; }
+    .d-lede { font-size: 15.5px; color: var(--muted); margin: 0; max-width: 680px; }
+    .points { margin: 0; padding-left: 18px; }
+    .points li { margin-bottom: 9px; color: var(--ink-2); }
+    .points li::marker { color: var(--faint); }
     .points b { color: var(--ink); font-weight: 600; }
 
-    table.results { width: 100%; border-collapse: collapse; font-size: 14px; }
-    table.results th { text-align: left; font-weight: 600; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; padding: 0 10px 10px 0; border-bottom: 1px solid var(--line-strong); }
-    table.results td { padding: 11px 10px 11px 0; border-bottom: 1px solid var(--line); color: var(--ink-2); }
-    table.results td.num, table.results th.num { text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
-    table.results tr.hi td { color: var(--ink); font-weight: 600; }
-    table.results tr.hi td:first-child::after { content: "ours"; margin-left: 8px; font-size: 10.5px; font-weight: 600; color: var(--gold); background: var(--gold-soft); padding: 2px 6px; border-radius: 5px; vertical-align: 1px; }
-    .table-note { font-size: 12.5px; color: var(--faint); margin: 10px 0 0; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+    table.t { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 420px; }
+    table.t th { text-align: left; font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; background: var(--surface-2); padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    table.t td { padding: 11px 14px; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+    table.t tr:last-child td { border-bottom: 0; }
+    table.t .n { text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; white-space: nowrap; }
+    table.t tr.hi td { color: var(--ink); font-weight: 600; background: var(--accent-soft); }
+    .note { font-size: 12.5px; color: var(--faint); margin: 8px 0 0; }
 
-    /* Compute bar chart */
-    .bars { margin-top: 26px; }
-    .bar-row { display: grid; grid-template-columns: 112px 1fr 58px; align-items: center; gap: 12px; margin-bottom: 9px; font-size: 13.5px; }
-    .bar-row .lbl { color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .bar-track { height: 10px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
-    .bar-fill { height: 100%; border-radius: 99px; background: var(--line-strong); width: 0; transition: width 1s cubic-bezier(.2,.8,.2,1); }
-    .bar-row.ours .bar-fill { background: var(--gold); }
-    .bar-row.ours .lbl { color: var(--ink); font-weight: 600; }
-    .bar-row .val { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--muted); text-align: right; }
+    .bars { display: grid; gap: 9px; }
+    .bar { display: grid; grid-template-columns: 120px 1fr 52px; gap: 12px; align-items: center; font-size: 14px; }
+    .bar .l { color: var(--ink-2); }
+    .bar .track { height: 8px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+    .bar .fill { height: 100%; background: var(--line-2); border-radius: 99px; }
+    .bar.me .l { color: var(--ink); font-weight: 600; }
+    .bar.me .fill { background: var(--accent); }
+    .bar .v { text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--muted); }
 
-    .callout {
-      margin-top: 22px; padding: 14px 16px; border-radius: 12px; background: var(--accent-soft);
-      color: var(--ink-2); font-size: 14px; border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
-    }
+    .callout { padding: 14px 16px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 10px 10px 0; color: var(--ink-2); font-size: 14.5px; }
     .callout b { color: var(--ink); }
-    .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
-    .chip { font-size: 12.5px; padding: 5px 10px; border-radius: 8px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 
-    /* Smaller project cards */
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .card {
-      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px;
-      display: flex; flex-direction: column; transition: transform .2s ease, border-color .2s ease;
-    }
-    .card:hover { transform: translateY(-2px); border-color: var(--line-strong); }
-    .card-icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: var(--surface-2); color: var(--ink-2); margin-bottom: 16px; }
-    .card h3 { font-size: 17px; margin: 0 0 4px; font-weight: 600; }
-    .card .ctx { font-size: 13px; color: var(--faint); margin-bottom: 10px; }
-    .card p { font-size: 14.5px; color: var(--muted); margin: 0 0 16px; flex: 1; }
-
-    /* ---------- Timeline ---------- */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
-    .panel-title { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 15px; margin: 0 0 22px; }
-    .panel-title i { color: var(--gold); }
-    .tl { position: relative; padding-left: 22px; }
-    .tl::before { content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
-    .tl-item { position: relative; padding-bottom: 22px; }
+    /* Timelines */
+    .tl { position: relative; padding-left: 26px; }
+    .tl::before { content: ""; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+    .tl-item { position: relative; padding-bottom: 24px; }
     .tl-item:last-child { padding-bottom: 0; }
-    .tl-item::before { content: ""; position: absolute; left: -22px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--gold); }
-    .tl-when { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--faint); }
-    .tl-what { font-weight: 600; font-size: 15.5px; margin: 2px 0 2px; }
+    .tl-item::before { content: ""; position: absolute; left: -26px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); }
+    .tl-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .tl-what { font-weight: 600; font-size: 15.5px; }
+    .tl-when { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--muted); white-space: nowrap; }
     .tl-where { font-size: 14px; color: var(--muted); }
-    .tl-desc { font-size: 14px; color: var(--ink-2); margin-top: 8px; }
-    .grade { display: inline-block; margin-left: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 1px 7px; border-radius: 6px; vertical-align: 1px; }
-    .awards { list-style: none; padding: 0; margin: 0; }
-    .awards li { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 14.5px; color: var(--ink-2); }
-    .awards li:first-child { border-top: 0; padding-top: 0; }
-    .awards i { color: var(--gold); margin-top: 4px; }
-    .awards b { color: var(--ink); }
+    .tl-desc { font-size: 14.5px; color: var(--ink-2); margin-top: 8px; }
+    .grade { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-text); background: var(--accent-soft); padding: 1px 7px; border-radius: 6px; margin-left: 8px; }
 
-    /* ---------- Skills ---------- */
-    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .skill-group h4 { display: flex; align-items: center; gap: 9px; font-size: 14.5px; margin: 0 0 14px; font-weight: 600; }
-    .skill-group h4 i { color: var(--gold); width: 16px; }
-    .skill-group .chips { margin-top: 0; }
+    .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .skill { border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+    .skill h3 { display: flex; align-items: center; gap: 10px; font-size: 14.5px; margin: 0 0 12px; }
+    .skill h3 i { color: var(--accent-text); width: 16px; }
 
-    /* ---------- Contact ---------- */
-    .contact {
-      margin: 90px 0 0; padding: 48px; border-radius: 22px; color: #EEF1F6; position: relative; overflow: hidden;
-      background: radial-gradient(120% 140% at 100% 0%, rgba(245,194,107,.28) 0%, rgba(245,194,107,0) 46%), #0B1220;
-      display: grid; grid-template-columns: 1.3fr 1fr; gap: 30px; align-items: center;
-    }
-    .contact h2 { font-family: 'Newsreader', Georgia, serif; font-size: clamp(30px, 3.6vw, 40px); margin: 0 0 10px; line-height: 1.1; font-weight: 600; }
-    .contact p { color: #B8C1D0; margin: 0; }
-    .contact-links { display: grid; gap: 10px; }
-    .contact-links a {
-      display: flex; align-items: center; gap: 12px; padding: 13px 16px; border-radius: 12px; color: #EEF1F6;
-      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); font-size: 14.5px; font-weight: 500;
-    }
-    .contact-links a:hover { background: rgba(255,255,255,.1); text-decoration: none; }
-    .contact-links i { width: 18px; text-align: center; color: #F5C26B; }
-    .contact-links span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .contact-list { display: grid; gap: 10px; }
+    .c-row { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); }
+    .c-row:hover { background: var(--surface-2); text-decoration: none; }
+    .c-row i.lead { width: 36px; height: 36px; border-radius: 9px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent-text); flex-shrink: 0; }
+    .c-row .ct { font-weight: 600; font-size: 14.5px; }
+    .c-row .cs { font-size: 13.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .c-row .grow { flex: 1; min-width: 0; }
 
-    footer { padding: 36px 0 48px; color: var(--faint); font-size: 13.5px; }
-    .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer.foot { text-align: center; color: var(--faint); font-size: 13px; padding: 26px 0 8px; }
 
-    /* ---------- Reveal ---------- */
-    .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
-    .reveal.in { opacity: 1; transform: none; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .reveal { opacity: 1; transform: none; transition: none; }
-      .pulse { animation: none; }
-      .bar-fill { transition: none; }
-    }
+    /* Mobile-only pieces */
+    .appbar, .bottom-nav, .m-profile { display: none; }
 
-    /* ---------- Responsive ---------- */
-    @media (max-width: 920px) {
-      .hero-grid, .feature-grid, .two-col, .contact { grid-template-columns: 1fr; }
-      .hero-grid { gap: 36px; }
-      .visual { aspect-ratio: 16 / 10; max-width: 560px; }
-      .portrait { width: 30%; top: 42%; }
-      .grid-3, .skills { grid-template-columns: 1fr 1fr; }
-      .stats { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 720px) {
-      .nav-links {
-        display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; align-items: stretch;
-        background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 16px 14px;
+    @media (prefers-reduced-motion: reduce) { .view.active { animation: none; } }
+
+    /* ================= Responsive ================= */
+    @media (max-width: 900px) {
+      .app { grid-template-columns: 1fr; padding: 0 0 calc(76px + env(safe-area-inset-bottom)); gap: 0; }
+      .profile, .tabs { display: none; }
+      .appbar {
+        display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 30;
+        height: 58px; padding: 0 16px; background: var(--surface); border-bottom: 1px solid var(--line);
       }
-      .nav-links.open { display: flex; }
-      .nav-links a { padding: 11px 12px; }
-      .menu-btn { display: grid; }
-      .nav-resume { display: none; }
-    }
-    @media (max-width: 600px) {
-      .container { padding: 0 16px; }
-      .hero { padding: 44px 0 24px; }
-      .role { font-size: 17px; }
-      .grid-3, .skills { grid-template-columns: 1fr; }
-      .feature { padding: 22px; border-radius: 16px; }
-      .feature h3 { font-size: 24px; }
-      .panel { padding: 22px; }
-      .contact { padding: 30px 22px; margin-top: 64px; }
-      section.block { padding-top: 64px; }
-      .sec-head { flex-direction: column; align-items: flex-start; gap: 10px; }
-      .stat-num { font-size: 27px; }
-      .bar-row { grid-template-columns: 104px 1fr 44px; gap: 8px; font-size: 13px; }
-      table.results { font-size: 13px; }
-      table.results td.num, table.results th.num { font-size: 12px; }
-      .visual-cap { font-size: 11.5px; }
+      .appbar .who { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 15.5px; color: var(--ink); }
+      .appbar img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+      .main { padding: 16px; }
+      .panel { padding: 20px; border-radius: 14px; }
+      .m-profile { display: block; text-align: center; }
+      .m-profile .avatar { margin: 4px auto 0; width: 96px; height: 96px; }
+      .m-profile .p-actions { margin-top: 18px; }
+      .m-profile .icon-row { justify-content: center; margin-top: 12px; }
+      .bottom-nav {
+        display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+        background: var(--surface); border-top: 1px solid var(--line); padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+      }
+      .bottom-nav .tab { flex-direction: column; gap: 3px; height: 54px; font-size: 11px; font-weight: 600; border-radius: 10px; }
+      .bottom-nav .tab i { font-size: 17px; }
+      .bottom-nav .tab[aria-selected="true"] { background: var(--accent-soft); color: var(--accent-text); }
+      .grid-2, .skill-grid { grid-template-columns: 1fr; gap: 22px; }
+      .d-title { font-size: 22px; }
+      .v-title { font-size: 20px; }
+      .row { grid-template-columns: 40px 1fr 14px; gap: 12px; padding: 14px; }
+      .row-icon { width: 40px; height: 40px; font-size: 15px; }
+      .bar { grid-template-columns: 104px 1fr 44px; gap: 8px; font-size: 13px; }
+      footer.foot { padding-bottom: 0; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
-  <nav class="nav" id="nav" aria-label="Main">
-    <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Ashutosh Borah, home">
-        <span class="monogram">AB</span><span>Ashutosh Borah</span>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="nav-actions">
-        <a class="btn btn-primary btn-sm nav-resume" href="Ashutosh_Borah_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Resume</a>
-        <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme"><i class="fa-solid fa-moon"></i></button>
-        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><i class="fa-solid fa-bars"></i></button>
-      </div>
-    </div>
-  </nav>
+  <!-- Mobile app bar -->
+  <header class="appbar">
+    <a class="who" href="#about"><img src="https://github.com/ashutoshborah718.png" alt="" />Ashutosh Borah</a>
+    <button class="icon-btn theme-btn" type="button" aria-label="Switch colour theme"><i class="fa-solid fa-moon"></i></button>
+  </header>
 
-  <main id="top">
-    <!-- ===== Hero ===== -->
-    <header class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="reveal">
-            <span class="eyebrow"><span class="pulse"></span> Open to AI/ML, Computer Vision &amp; Research roles</span>
-            <h1 class="name">Ashutosh Borah</h1>
-            <p class="role">M.Tech researcher at <b>NIT Silchar</b> building <b>efficient deep learning for low-light imaging</b>.</p>
-            <p class="lede">I design, train and rigorously evaluate image-enhancement networks: lightweight architectures, controlled from-scratch benchmarks against the state of the art, and careful error analysis to find out where the remaining error really comes from.</p>
-            <div class="meta-row">
-              <span><i class="fa-solid fa-graduation-cap"></i> M.Tech, Communication &amp; Signal Processing</span>
-              <span><i class="fa-solid fa-location-dot"></i> Jagiroad, Assam, India</span>
-            </div>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="Ashutosh_Borah_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> View Resume</a>
-              <a class="btn btn-ghost" href="mailto:ashutoshborah41@gmail.com"><i class="fa-regular fa-envelope"></i> Get in touch</a>
-            </div>
-            <div class="socials">
-              <a href="https://www.linkedin.com/in/ashutosh-borah-4b564821b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://github.com/ashutoshborah718" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-              <a href="mailto:ashutoshborah41@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            </div>
+  <div class="app">
+
+    <!-- ===== Profile sidebar (desktop) ===== -->
+    <aside class="profile" aria-label="Profile">
+      <img class="avatar" src="https://github.com/ashutoshborah718.png" alt="Ashutosh Borah" />
+      <h1 class="p-name">Ashutosh Borah</h1>
+      <p class="p-title">M.Tech Researcher · Computer Vision</p>
+      <p class="p-org">National Institute of Technology Silchar</p>
+      <span class="status">Open to AI/ML &amp; research roles</span>
+      <ul class="p-facts">
+        <li><i class="fa-solid fa-location-dot"></i> Jagiroad, Assam, India</li>
+        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:ashutoshborah41@gmail.com">ashutoshborah41@gmail.com</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/ashutosh-borah-4b564821b/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/ashutoshborah718" target="_blank" rel="noopener">github.com/ashutoshborah718</a></li>
+      </ul>
+      <div class="p-actions">
+        <a class="btn btn-primary" href="Ashutosh_Borah_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Resume</a>
+        <a class="btn" href="mailto:ashutoshborah41@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+      </div>
+      <div class="p-foot">
+        <span style="font-size:12.5px;color:var(--faint)">Theme</span>
+        <button class="icon-btn theme-btn" type="button" aria-label="Switch colour theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </aside>
+
+    <!-- ===== Main ===== -->
+    <main class="main">
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button class="tab" role="tab" data-view="about"><i class="fa-regular fa-user"></i> About</button>
+        <button class="tab" role="tab" data-view="research"><i class="fa-solid fa-flask"></i> Research</button>
+        <button class="tab" role="tab" data-view="background"><i class="fa-solid fa-briefcase"></i> Background</button>
+        <button class="tab" role="tab" data-view="skills"><i class="fa-solid fa-layer-group"></i> Skills</button>
+        <button class="tab" role="tab" data-view="contact"><i class="fa-regular fa-paper-plane"></i> Contact</button>
+      </nav>
+
+      <!-- ===== About ===== -->
+      <section class="view" id="view-about" aria-label="About">
+        <div class="panel m-profile">
+          <img class="avatar" src="https://github.com/ashutoshborah718.png" alt="Ashutosh Borah" />
+          <h1 class="p-name">Ashutosh Borah</h1>
+          <p class="p-title">M.Tech Researcher · Computer Vision</p>
+          <p class="p-org">NIT Silchar · Jagiroad, Assam</p>
+          <span class="status">Open to AI/ML &amp; research roles</span>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="Ashutosh_Borah_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Resume</a>
+            <a class="btn" href="mailto:ashutoshborah41@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
           </div>
-
-          <div class="visual reveal" aria-hidden="true">
-            <div class="tgrid" id="tgrid"></div>
-            <img class="portrait" src="https://github.com/ashutoshborah718.png" alt="" />
-            <div class="visual-cap"><b>NTR-Net idea:</b> brighten a dark image with a grid of small local colour transforms, each cell learning its own correction.</div>
+          <div class="icon-row">
+            <a class="icon-btn" href="https://www.linkedin.com/in/ashutosh-borah-4b564821b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="icon-btn" href="https://github.com/ashutoshborah718" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
 
-        <div class="stats reveal">
-          <div class="stat"><div class="stat-num">0.94<small>M</small></div><div class="stat-label">parameters in NTR-Net, my dissertation model</div></div>
-          <div class="stat"><div class="stat-num">2.8<small>×</small></div><div class="stat-label">less compute than RetinexFormer (5.56 vs 15.85 GMACs)</div></div>
-          <div class="stat"><div class="stat-num">+0.74<small>dB</small></div><div class="stat-label">PSNR gain from NFR-v4 in a controlled A/B test</div></div>
-          <div class="stat"><div class="stat-num">8.81<small>/10</small></div><div class="stat-label">M.Tech CGPA · GATE qualified 2024 &amp; 2025</div></div>
-        </div>
-      </div>
-    </header>
+        <div class="panel">
+          <h2 class="v-title">About</h2>
+          <p class="v-sub">Computer vision researcher · Low-light image enhancement</p>
+          <p class="body">I am an M.Tech scholar in Communication &amp; Signal Processing at the National Institute of Technology Silchar. My research is on efficient deep learning for low-light image enhancement: recovering detail, colour and brightness from images taken in poor lighting.</p>
+          <p class="body">I work across the full research loop: designing lightweight architectures, training them on GPUs, benchmarking them fairly against state-of-the-art methods, and analysing results carefully so that every claimed improvement holds up against random variation between training runs.</p>
+          <p class="body" style="margin-bottom:0">Before deep learning, my background was in electronics and digital hardware, including Verilog HDL, FPGA design and a VLSI internship.</p>
 
-    <!-- ===== Research ===== -->
-    <section class="block" id="research">
-      <div class="container">
-        <div class="sec-head reveal">
-          <div>
-            <div class="sec-kicker">Research</div>
-            <h2 class="sec-title">Selected work</h2>
+          <div class="h-label">Current work</div>
+          <div class="list">
+            <button class="row" type="button" data-go="research/ntrnet">
+              <span class="row-icon"><i class="fa-solid fa-table-cells"></i></span>
+              <span><span class="row-title">NTR-Net</span><span class="badge live">Dissertation</span><div class="row-meta">A lightweight network that enhances images with a grid of local colour transforms</div></span>
+              <i class="fa-solid fa-chevron-right row-go"></i>
+            </button>
+            <button class="row" type="button" data-go="research/nfrv4">
+              <span class="row-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+              <span><span class="row-title">NFR-v4 on RetinexFormer</span><div class="row-meta">Controlled from-scratch benchmark of a neighbourhood-attention block</div></span>
+              <i class="fa-solid fa-chevron-right row-go"></i>
+            </button>
           </div>
-          <p class="sec-sub">Low-light image enhancement on the LOL benchmarks: full-resolution evaluation, fixed seeds, and every gain checked against seed noise.</p>
-        </div>
 
-        <!-- NTR-Net -->
-        <article class="feature reveal">
-          <div class="feature-top">
-            <span class="tag gold">M.Tech Dissertation</span>
-            <span class="tag live">Ongoing</span>
-            <span class="tag">IEEE paper draft in progress</span>
-          </div>
-          <h3>NTR-Net: Neighbourhood Transform Refinement Network</h3>
-          <p class="sub">A lightweight low-light enhancement network that predicts a grid of local colour transforms instead of generating every pixel.</p>
-          <div class="feature-grid">
-            <div>
-              <h4>What I did</h4>
-              <ul class="points">
-                <li>Designed the network: <b>0.94 M parameters, 5.56 GMACs</b> at 256×256, about 2.8× less compute than RetinexFormer.</li>
-                <li>Ran a <b>headroom study</b> first: a perfect 16×16×8 transform grid reaches 30.3 dB on LOL-v1, so the idea has real room to grow.</li>
-                <li><b>Error analysis</b> with oracle corrections showed most remaining error is per-image brightness and tone, not noise (+0.1 dB).</li>
-                <li>Multi-run <b>ablation chains</b> and one-factor-at-a-time probes; kept only changes that beat seed noise. A +0.77 dB result was traced to seed luck and dropped.</li>
-                <li>Checked generalisation on <b>109 unseen images</b> from other cameras (LSRW, LOL-v2 new scenes).</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Results (standard protocol)</h4>
-              <table class="results">
-                <thead><tr><th>Benchmark</th><th class="num">PSNR</th><th class="num">SSIM</th><th class="num">GT-mean</th></tr></thead>
-                <tbody>
-                  <tr><td>LOL-v1 <span style="color:var(--faint)">(2 seeds)</span></td><td class="num">23.33 ± 0.32</td><td class="num">0.834</td><td class="num">26.53</td></tr>
-                  <tr><td>LOL-v2-Synthetic</td><td class="num">24.09</td><td class="num">0.919</td><td class="num">27.36</td></tr>
-                  <tr><td>LOL-v2-Real</td><td class="num">20.55</td><td class="num">0.837</td><td class="num">27.62</td></tr>
-                </tbody>
-              </table>
-              <p class="table-note">PSNR in dB at full resolution. GT-mean PSNR corrects overall brightness before scoring.</p>
-
-              <div class="bars" id="bars">
-                <h4>Compute at 256×256 (GMACs, lower is better)</h4>
-                <div class="bar-row ours"><span class="lbl">NTR-Net</span><div class="bar-track"><div class="bar-fill" data-v="5.56"></div></div><span class="val">5.56</span></div>
-                <div class="bar-row"><span class="lbl">HVI-CIDNet</span><div class="bar-track"><div class="bar-fill" data-v="7.57"></div></div><span class="val">7.57</span></div>
-                <div class="bar-row"><span class="lbl">CWNet</span><div class="bar-track"><div class="bar-fill" data-v="11.3"></div></div><span class="val">11.3</span></div>
-                <div class="bar-row"><span class="lbl">RetinexFormer</span><div class="bar-track"><div class="bar-fill" data-v="15.85"></div></div><span class="val">15.85</span></div>
-                <div class="bar-row"><span class="lbl">SNR-Aware</span><div class="bar-track"><div class="bar-fill" data-v="26.35"></div></div><span class="val">26.35</span></div>
-                <p class="table-note">Other methods' values as reported in their papers.</p>
-              </div>
-            </div>
-          </div>
+          <div class="h-label">Research interests</div>
           <div class="chips">
-            <span class="chip">PyTorch</span><span class="chip">Lightweight CNN</span><span class="chip">Transform grids</span><span class="chip">HVI colour space</span><span class="chip">Ablation studies</span><span class="chip">RTX 4050 + Kaggle</span>
+            <span class="chip">Low-light image &amp; video enhancement</span><span class="chip">Image restoration</span><span class="chip">Efficient vision models</span><span class="chip">State space models (Mamba)</span><span class="chip">Computational imaging</span>
           </div>
-        </article>
+        </div>
+      </section>
 
-        <!-- NFR-v4 -->
-        <article class="feature reveal">
-          <div class="feature-top">
-            <span class="tag gold">M.Tech Research</span>
-            <span class="tag live">Ongoing</span>
+      <!-- ===== Research list ===== -->
+      <section class="view" id="view-research" aria-label="Research">
+        <div class="panel">
+          <h2 class="v-title">Research &amp; projects</h2>
+          <p class="v-sub">Select a project to see the details and results.</p>
+          <div class="list">
+            <button class="row" type="button" data-go="research/ntrnet">
+              <span class="row-icon"><i class="fa-solid fa-table-cells"></i></span>
+              <span><span class="row-title">NTR-Net: Neighbourhood Transform Refinement Network</span><span class="badge live">Ongoing</span><div class="row-meta">M.Tech Dissertation · Low-light enhancement</div></span>
+              <i class="fa-solid fa-chevron-right row-go"></i>
+            </button>
+            <button class="row" type="button" data-go="research/nfrv4">
+              <span class="row-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+              <span><span class="row-title">NFR-v4 + HVI on RetinexFormer</span><span class="badge live">Ongoing</span><div class="row-meta">M.Tech Research · Audit &amp; from-scratch benchmark</div></span>
+              <i class="fa-solid fa-chevron-right row-go"></i>
+            </button>
+            <button class="row" type="button" data-go="research/diffretinex">
+              <span class="row-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+              <span><span class="row-title">Diff-Retinex: diffusion-based enhancement</span><div class="row-meta">M.Tech Seminar · Replication study</div></span>
+              <i class="fa-solid fa-chevron-right row-go"></i>
+            </button>
+            <button class="row" type="button" data-go="research/fpga">
+              <span class="row-icon"><i class="fa-solid fa-microchip"></i></span>
+              <span><span class="row-title">FPGA automation systems</span><div class="row-meta">B.Tech Projects · Smart parking and smart home on FPGA</div></span>
+              <i class="fa-solid fa-chevron-right row-go"></i>
+            </button>
           </div>
-          <h3>NFR-v4 + HVI on RetinexFormer: audit &amp; from-scratch benchmark</h3>
-          <p class="sub">Does a neighbourhood-attention refinement block really improve a state-of-the-art model when both are trained the same way?</p>
-          <div class="feature-grid">
+        </div>
+      </section>
+
+      <!-- ===== Research detail: NTR-Net ===== -->
+      <section class="view" id="view-research/ntrnet" aria-label="NTR-Net">
+        <div class="panel">
+          <button class="back" type="button" data-go="research"><i class="fa-solid fa-arrow-left"></i> All research</button>
+          <div class="d-tags"><span class="d-tag accent">M.Tech Dissertation</span><span class="d-tag live">Ongoing</span><span class="d-tag">IEEE paper draft in progress</span></div>
+          <h2 class="d-title">NTR-Net: Neighbourhood Transform Refinement Network</h2>
+          <p class="d-lede">A lightweight low-light image enhancement network. Instead of generating every output pixel, it predicts a grid of small local colour transforms and applies them to the dark input.</p>
+
+          <div class="h-label">Contributions</div>
+          <ul class="points">
+            <li>Designed the network: <b>0.94 M parameters and 5.56 GMACs</b> at 256×256, about 2.8× less compute than RetinexFormer.</li>
+            <li>Ran a <b>headroom study</b> before training: a perfect 16×16×8 transform grid reaches 30.3 dB on LOL-v1, confirming the idea has room to grow.</li>
+            <li><b>Error analysis</b> with oracle corrections showed that most of the remaining error is per-image brightness and tone, not noise (+0.1 dB).</li>
+            <li>Ran multi-run <b>ablation chains</b> and one-factor-at-a-time probes, keeping only changes that beat run-to-run noise; a +0.77 dB result was traced to seed luck and dropped.</li>
+            <li>Tested generalisation on <b>109 unseen images</b> from other cameras (LSRW and new LOL-v2 scenes).</li>
+            <li>Built automated training and evaluation pipelines on a local RTX 4050 and Kaggle GPUs.</li>
+          </ul>
+
+          <div class="h-label">Results · standard protocol</div>
+          <div class="table-wrap">
+            <table class="t">
+              <thead><tr><th>Benchmark</th><th class="n">PSNR (dB)</th><th class="n">SSIM</th><th class="n">GT-mean PSNR</th></tr></thead>
+              <tbody>
+                <tr><td>LOL-v1 (mean of 2 seeds)</td><td class="n">23.33 ± 0.32</td><td class="n">0.834</td><td class="n">26.53</td></tr>
+                <tr><td>LOL-v2-Synthetic</td><td class="n">24.09</td><td class="n">0.919</td><td class="n">27.36</td></tr>
+                <tr><td>LOL-v2-Real</td><td class="n">20.55</td><td class="n">0.837</td><td class="n">27.62</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Full-resolution evaluation. GT-mean PSNR corrects overall brightness before scoring.</p>
+
+          <div class="h-label">Compute at 256×256 · GMACs, lower is better</div>
+          <div class="bars">
+            <div class="bar me"><span class="l">NTR-Net</span><span class="track"><span class="fill" style="display:block;width:21.1%"></span></span><span class="v">5.56</span></div>
+            <div class="bar"><span class="l">HVI-CIDNet</span><span class="track"><span class="fill" style="display:block;width:28.7%"></span></span><span class="v">7.57</span></div>
+            <div class="bar"><span class="l">CWNet</span><span class="track"><span class="fill" style="display:block;width:42.9%"></span></span><span class="v">11.3</span></div>
+            <div class="bar"><span class="l">RetinexFormer</span><span class="track"><span class="fill" style="display:block;width:60.2%"></span></span><span class="v">15.85</span></div>
+            <div class="bar"><span class="l">SNR-Aware</span><span class="track"><span class="fill" style="display:block;width:100%"></span></span><span class="v">26.35</span></div>
+          </div>
+          <p class="note">Values for other methods as reported in their papers.</p>
+
+          <div class="h-label">Tools</div>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">HVI colour space</span><span class="chip">Ablation studies</span><span class="chip">RTX 4050</span><span class="chip">Kaggle</span></div>
+        </div>
+      </section>
+
+      <!-- ===== Research detail: NFR-v4 ===== -->
+      <section class="view" id="view-research/nfrv4" aria-label="NFR-v4">
+        <div class="panel">
+          <button class="back" type="button" data-go="research"><i class="fa-solid fa-arrow-left"></i> All research</button>
+          <div class="d-tags"><span class="d-tag accent">M.Tech Research</span><span class="d-tag live">Ongoing</span></div>
+          <h2 class="d-title">NFR-v4 + HVI on RetinexFormer</h2>
+          <p class="d-lede">Does a neighbourhood-attention refinement block (NFR) really improve a state-of-the-art enhancement model when both are trained the same way from scratch?</p>
+
+          <div class="grid-2" style="margin-top:26px">
             <div>
-              <h4>What I did</h4>
+              <div class="h-label">Audit of the earlier prototype</div>
               <ul class="points">
-                <li><b>Audited the earlier prototype:</b> resizing test images to 256×256 had inflated PSNR by 1.3 dB, and the block crashed on non-square images.</li>
+                <li>Resizing test images to 256×256 had <b>inflated PSNR by 1.3 dB</b>, and the block crashed on non-square images.</li>
                 <li>Rebuilt a <b>full-resolution evaluation</b> that reproduces the published RetinexFormer result (25.16 dB / 0.845).</li>
-                <li>Redesigned the block: 4-head attention over its own patch plus 8 neighbours, relative-position bias, zero-initialised residual and an HVI-guided gate, with <b>59% fewer added parameters</b>, verified by an automated CPU test suite.</li>
-                <li>Ran <b>controlled A/B trainings from scratch</b>: 150K iterations, official recipe, same seed, two runs in parallel on 2× T4 GPUs.</li>
               </ul>
             </div>
             <div>
-              <h4>LOL-v2-Synthetic, 100 test images</h4>
-              <table class="results">
-                <thead><tr><th>Model</th><th class="num">PSNR</th><th class="num">SSIM</th><th class="num">GT-mean</th></tr></thead>
-                <tbody>
-                  <tr><td>RetinexFormer</td><td class="num">25.21</td><td class="num">0.931</td><td class="num">29.00</td></tr>
-                  <tr class="hi"><td>+ NFR-v4</td><td class="num">25.95</td><td class="num">0.935</td><td class="num">29.55</td></tr>
-                </tbody>
-              </table>
-              <p class="table-note">Both trained from scratch with the same recipe and seed. On LOL-v1 the two models tie within seed variance.</p>
-              <div class="callout"><b>Key finding:</b> an error budget with paired standard errors shows about 8 dB of the remaining error is a global tone curve, and all of NFR's gain lies there. HSV brightness augmentation kept 22.18 dB (vs 17.42 dB) when input exposure is halved.</div>
-            </div>
-          </div>
-          <div class="chips">
-            <span class="chip">Attention</span><span class="chip">RetinexFormer</span><span class="chip">A/B testing</span><span class="chip">AMP + EMA</span><span class="chip">Paired statistics</span><span class="chip">2× T4 GPUs</span>
-          </div>
-        </article>
-
-        <!-- Other projects -->
-        <div class="grid-3">
-          <article class="card reveal">
-            <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-            <h3>Diff-Retinex</h3>
-            <div class="ctx">M.Tech Seminar</div>
-            <p>Replicated a diffusion-based approach to illumination–reflectance decomposition (Transformer Decomposition Network) on the LOL dataset, reaching stable training (≈0.084 loss) on Kaggle GPU.</p>
-            <div class="chips" style="margin-top:0"><span class="chip">Diffusion</span><span class="chip">Retinex</span></div>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><i class="fa-solid fa-square-parking"></i></div>
-            <h3>Smart Car Parking System</h3>
-            <div class="ctx">B.Tech Project · FPGA</div>
-            <p>Designed and tested a Verilog HDL-based automated parking management framework using digital logic on an FPGA platform.</p>
-            <div class="chips" style="margin-top:0"><span class="chip">Verilog HDL</span><span class="chip">FPGA</span></div>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><i class="fa-solid fa-house-signal"></i></div>
-            <h3>Smart Home Automation</h3>
-            <div class="ctx">B.Tech Project · FPGA</div>
-            <p>Developed hardware-level home automation logic to control appliances on an FPGA and verified real-time operation.</p>
-            <div class="chips" style="margin-top:0"><span class="chip">Digital logic</span><span class="chip">Xilinx Vivado</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Experience & Education ===== -->
-    <section class="block" id="experience">
-      <div class="container">
-        <div class="sec-head reveal">
-          <div>
-            <div class="sec-kicker">Background</div>
-            <h2 class="sec-title">Experience &amp; education</h2>
-          </div>
-        </div>
-        <div class="two-col">
-          <div class="panel reveal">
-            <p class="panel-title"><i class="fa-solid fa-briefcase"></i> Experience</p>
-            <div class="tl">
-              <div class="tl-item">
-                <div class="tl-when">2025 — present</div>
-                <div class="tl-what">M.Tech Researcher, Low-Light Image Enhancement</div>
-                <div class="tl-where">National Institute of Technology Silchar</div>
-                <div class="tl-desc">Dissertation on NTR-Net and the NFR-v4 benchmark study: model design, GPU training pipelines, evaluation and error analysis.</div>
-              </div>
-              <div class="tl-item">
-                <div class="tl-when">Jun 2023</div>
-                <div class="tl-what">VLSI Design &amp; FPGA Intern</div>
-                <div class="tl-where">MoCITE Technology · Center of Excellence in VLSI Design</div>
-                <div class="tl-desc">Verilog HDL and digital design training, then RTL module development, simulation and hardware testing/verification on FPGA. <a href="https://drive.google.com/file/d/1XCXuSjE-eWHX20HTxe_Foa2o3kXYX3jV/view?usp=drivesdk" target="_blank" rel="noopener">View certificate <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:11px"></i></a></div>
-              </div>
+              <div class="h-label">Redesign</div>
+              <ul class="points">
+                <li>4-head attention over the own patch plus 8 neighbours, relative-position bias, zero-initialised residual and an HVI-guided gate.</li>
+                <li><b>59% fewer added parameters</b>, verified with an automated CPU test suite before any GPU run.</li>
+              </ul>
             </div>
           </div>
 
-          <div class="panel reveal">
-            <p class="panel-title"><i class="fa-solid fa-graduation-cap"></i> Education</p>
-            <div class="tl">
-              <div class="tl-item">
-                <div class="tl-when">2025 — 2027</div>
-                <div class="tl-what">M.Tech, Communication &amp; Signal Processing <span class="grade">8.81 / 10</span></div>
-                <div class="tl-where">National Institute of Technology Silchar</div>
-              </div>
-              <div class="tl-item">
-                <div class="tl-when">2020 — 2024</div>
-                <div class="tl-what">B.Tech, Electronics &amp; Communication Engineering <span class="grade">8.31 / 10</span></div>
-                <div class="tl-where">Assam University, Silchar</div>
-              </div>
-              <div class="tl-item">
-                <div class="tl-when">2017 — 2019</div>
-                <div class="tl-what">Higher Secondary (Science) <span class="grade">80.8%</span></div>
-                <div class="tl-where">Ramanujan Junior College, Nagaon</div>
-              </div>
+          <div class="h-label">Controlled A/B result · LOL-v2-Synthetic (100 images)</div>
+          <div class="table-wrap">
+            <table class="t">
+              <thead><tr><th>Model</th><th class="n">PSNR (dB)</th><th class="n">SSIM</th><th class="n">GT-mean PSNR</th></tr></thead>
+              <tbody>
+                <tr><td>RetinexFormer (baseline)</td><td class="n">25.21</td><td class="n">0.931</td><td class="n">29.00</td></tr>
+                <tr class="hi"><td>RetinexFormer + NFR-v4</td><td class="n">25.95</td><td class="n">0.935</td><td class="n">29.55</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Both trained from scratch for 150K iterations with the official recipe and the same seed, in parallel on 2× T4 GPUs. On LOL-v1 the two models tie within seed variance.</p>
+
+          <div class="h-label">Key finding</div>
+          <div class="callout">An error budget with paired standard errors shows that <b>about 8 dB of the remaining error is a global tone curve</b>, and all of NFR's gain lies there. HSV brightness augmentation kept 22.18 dB (vs 17.42 dB) when input exposure is halved.</div>
+
+          <div class="h-label">Tools</div>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">AMP + EMA</span><span class="chip">Multi-GPU runs</span><span class="chip">Paired statistics</span><span class="chip">Kaggle 2× T4</span></div>
+        </div>
+      </section>
+
+      <!-- ===== Research detail: Diff-Retinex ===== -->
+      <section class="view" id="view-research/diffretinex" aria-label="Diff-Retinex">
+        <div class="panel">
+          <button class="back" type="button" data-go="research"><i class="fa-solid fa-arrow-left"></i> All research</button>
+          <div class="d-tags"><span class="d-tag accent">M.Tech Seminar</span></div>
+          <h2 class="d-title">Diff-Retinex: diffusion-based low-light enhancement</h2>
+          <p class="d-lede">A study and replication of a diffusion-based approach to illumination–reflectance decomposition.</p>
+          <div class="h-label">Work</div>
+          <ul class="points">
+            <li>Replicated the Transformer Decomposition Network on the LOL dataset.</li>
+            <li>Studied illumination/reflectance decomposition and the diffusion-based restoration modules.</li>
+            <li>Reached stable training (≈0.084 loss) using Kaggle GPU resources.</li>
+          </ul>
+          <div class="h-label">Tools</div>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">Diffusion models</span><span class="chip">Retinex theory</span><span class="chip">Kaggle</span></div>
+        </div>
+      </section>
+
+      <!-- ===== Research detail: FPGA ===== -->
+      <section class="view" id="view-research/fpga" aria-label="FPGA projects">
+        <div class="panel">
+          <button class="back" type="button" data-go="research"><i class="fa-solid fa-arrow-left"></i> All research</button>
+          <div class="d-tags"><span class="d-tag accent">B.Tech Projects</span></div>
+          <h2 class="d-title">FPGA automation systems</h2>
+          <p class="d-lede">Two hardware projects built with digital logic on an FPGA platform.</p>
+          <div class="grid-2" style="margin-top:26px">
+            <div>
+              <div class="h-label">Smart car parking system</div>
+              <p class="body">Designed and tested a Verilog HDL-based automated parking management framework on FPGA.</p>
+            </div>
+            <div>
+              <div class="h-label">Smart home automation system</div>
+              <p class="body">Developed hardware-level logic to control home appliances and verified real-time operation on the board.</p>
+            </div>
+          </div>
+          <div class="h-label">Tools</div>
+          <div class="chips"><span class="chip">Verilog HDL</span><span class="chip">RTL design</span><span class="chip">Simulation</span><span class="chip">Xilinx Vivado</span></div>
+        </div>
+      </section>
+
+      <!-- ===== Background ===== -->
+      <section class="view" id="view-background" aria-label="Background">
+        <div class="panel">
+          <h2 class="v-title">Experience</h2>
+          <p class="v-sub">Research and industry experience</p>
+          <div class="tl">
+            <div class="tl-item">
+              <div class="tl-head"><span class="tl-what">M.Tech Researcher, Low-Light Image Enhancement</span><span class="tl-when">2025 — present</span></div>
+              <div class="tl-where">National Institute of Technology Silchar</div>
+              <div class="tl-desc">Dissertation on NTR-Net and the NFR-v4 benchmark study: model design, GPU training pipelines, evaluation and error analysis.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-head"><span class="tl-what">VLSI Design &amp; FPGA Intern</span><span class="tl-when">Jun 2023</span></div>
+              <div class="tl-where">MoCITE Technology · Center of Excellence in VLSI Design</div>
+              <div class="tl-desc">Trained in Verilog HDL and digital design, then developed RTL modules and carried out simulation and hardware testing on FPGA. <a href="https://drive.google.com/file/d/1XCXuSjE-eWHX20HTxe_Foa2o3kXYX3jV/view?usp=drivesdk" target="_blank" rel="noopener">View certificate</a></div>
             </div>
           </div>
         </div>
 
-        <div class="panel reveal" style="margin-top:22px">
-          <p class="panel-title"><i class="fa-solid fa-trophy"></i> Achievements</p>
-          <ul class="awards">
-            <li><i class="fa-solid fa-medal"></i><span><b>GATE qualified</b> in Electronics &amp; Communication Engineering, 2024 and 2025.</span></li>
-            <li><i class="fa-solid fa-medal"></i><span>Qualified <b>Zonal Level</b> (2014–15) and <b>State Level</b> (2015–16), Vedic Mathematics Competition, Vidya Bharati Bigyan Mela.</span></li>
+        <div class="panel">
+          <h2 class="v-title">Education</h2>
+          <p class="v-sub">Academic record</p>
+          <div class="tl">
+            <div class="tl-item">
+              <div class="tl-head"><span class="tl-what">M.Tech, Communication &amp; Signal Processing <span class="grade">8.81/10</span></span><span class="tl-when">2025 — 2027</span></div>
+              <div class="tl-where">National Institute of Technology Silchar</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-head"><span class="tl-what">B.Tech, Electronics &amp; Communication Engineering <span class="grade">8.31/10</span></span><span class="tl-when">2020 — 2024</span></div>
+              <div class="tl-where">Assam University, Silchar</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-head"><span class="tl-what">Higher Secondary (Science) <span class="grade">80.8%</span></span><span class="tl-when">2017 — 2019</span></div>
+              <div class="tl-where">Ramanujan Junior College, Nagaon</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-head"><span class="tl-what">Secondary (Class X, SEBA) <span class="grade">92.8%</span></span><span class="tl-when">2017</span></div>
+              <div class="tl-where">Shankar Dev Vidya Niketan, Bhakatgaon</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 class="v-title">Achievements</h2>
+          <ul class="points" style="margin-top:14px">
+            <li><b>GATE qualified</b>, Electronics &amp; Communication Engineering, 2024 and 2025.</li>
+            <li>Qualified <b>Zonal Level</b> (2014–15) and <b>State Level</b> (2015–16), Vedic Mathematics Competition, Vidya Bharati Bigyan Mela.</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== Skills ===== -->
-    <section class="block" id="skills">
-      <div class="container">
-        <div class="sec-head reveal">
-          <div>
-            <div class="sec-kicker">Toolkit</div>
-            <h2 class="sec-title">Skills</h2>
+      <!-- ===== Skills ===== -->
+      <section class="view" id="view-skills" aria-label="Skills">
+        <div class="panel">
+          <h2 class="v-title">Skills</h2>
+          <p class="v-sub">Technical skills and coursework</p>
+          <div class="skill-grid">
+            <div class="skill"><h3><i class="fa-solid fa-brain"></i> Deep learning &amp; vision</h3>
+              <div class="chips"><span class="chip">CNNs</span><span class="chip">Attention</span><span class="chip">Transformers</span><span class="chip">Encoder–decoder</span><span class="chip">Diffusion models</span><span class="chip">Mamba (SSM)</span><span class="chip">Retinex theory</span></div></div>
+            <div class="skill"><h3><i class="fa-solid fa-flask"></i> Training &amp; evaluation</h3>
+              <div class="chips"><span class="chip">PyTorch</span><span class="chip">AMP</span><span class="chip">EMA</span><span class="chip">Multi-GPU runs</span><span class="chip">Ablations</span><span class="chip">Seed variance</span><span class="chip">PSNR / SSIM / LPIPS</span></div></div>
+            <div class="skill"><h3><i class="fa-solid fa-code"></i> Programming &amp; tools</h3>
+              <div class="chips"><span class="chip">Python</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">MATLAB</span><span class="chip">Git</span><span class="chip">Jupyter</span><span class="chip">Kaggle</span><span class="chip">Colab</span></div></div>
+            <div class="skill"><h3><i class="fa-solid fa-wave-square"></i> Signal &amp; image processing</h3>
+              <div class="chips"><span class="chip">Filtering</span><span class="chip">FFT</span><span class="chip">DCT</span><span class="chip">Histogram equalisation</span><span class="chip">Noise modelling</span></div></div>
+            <div class="skill"><h3><i class="fa-solid fa-microchip"></i> Hardware</h3>
+              <div class="chips"><span class="chip">Verilog HDL</span><span class="chip">RTL design</span><span class="chip">Simulation</span><span class="chip">FPGA testing</span><span class="chip">Xilinx Vivado</span></div></div>
+            <div class="skill"><h3><i class="fa-solid fa-book-open"></i> Coursework</h3>
+              <div class="chips"><span class="chip">Advanced DSP</span><span class="chip">Image Processing</span><span class="chip">Communication Theory</span><span class="chip">Linear Algebra</span><span class="chip">Probability</span></div></div>
           </div>
         </div>
-        <div class="skills">
-          <div class="panel skill-group reveal">
-            <h4><i class="fa-solid fa-brain"></i> Deep learning &amp; vision</h4>
-            <div class="chips"><span class="chip">CNNs</span><span class="chip">Attention</span><span class="chip">Transformers</span><span class="chip">Encoder–decoder</span><span class="chip">Diffusion models</span><span class="chip">State space models (Mamba)</span><span class="chip">Retinex theory</span><span class="chip">HVI / HSV colour</span></div>
-          </div>
-          <div class="panel skill-group reveal">
-            <h4><i class="fa-solid fa-flask"></i> Training &amp; evaluation</h4>
-            <div class="chips"><span class="chip">PyTorch</span><span class="chip">AMP</span><span class="chip">EMA</span><span class="chip">Multi-GPU runs</span><span class="chip">Checkpoint / resume</span><span class="chip">Ablations</span><span class="chip">Seed variance</span><span class="chip">PSNR / SSIM / LPIPS</span></div>
-          </div>
-          <div class="panel skill-group reveal">
-            <h4><i class="fa-solid fa-code"></i> Programming &amp; tools</h4>
-            <div class="chips"><span class="chip">Python</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">MATLAB</span><span class="chip">Git</span><span class="chip">Jupyter</span><span class="chip">Kaggle</span><span class="chip">Google Colab</span></div>
-          </div>
-          <div class="panel skill-group reveal">
-            <h4><i class="fa-solid fa-wave-square"></i> Signal &amp; image processing</h4>
-            <div class="chips"><span class="chip">Spatial / frequency filtering</span><span class="chip">FFT</span><span class="chip">DCT</span><span class="chip">Histogram equalisation</span><span class="chip">Noise modelling</span></div>
-          </div>
-          <div class="panel skill-group reveal">
-            <h4><i class="fa-solid fa-microchip"></i> Hardware</h4>
-            <div class="chips"><span class="chip">Verilog HDL</span><span class="chip">RTL design</span><span class="chip">Simulation</span><span class="chip">FPGA testing</span><span class="chip">Xilinx Vivado</span></div>
-          </div>
-          <div class="panel skill-group reveal">
-            <h4><i class="fa-solid fa-book-open"></i> Coursework</h4>
-            <div class="chips"><span class="chip">Advanced DSP</span><span class="chip">Image Processing</span><span class="chip">Communication Theory</span><span class="chip">Linear Algebra</span><span class="chip">Probability</span></div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section class="view" id="view-contact" aria-label="Contact">
+        <div class="panel">
+          <h2 class="v-title">Contact</h2>
+          <p class="v-sub">Open to AI/ML, computer vision and research roles. Email is the quickest way to reach me.</p>
+          <div class="contact-list">
+            <a class="c-row" href="mailto:ashutoshborah41@gmail.com"><i class="fa-regular fa-envelope lead"></i><span class="grow"><div class="ct">Email</div><div class="cs">ashutoshborah41@gmail.com</div></span><i class="fa-solid fa-chevron-right row-go"></i></a>
+            <a class="c-row" href="https://www.linkedin.com/in/ashutosh-borah-4b564821b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in lead"></i><span class="grow"><div class="ct">LinkedIn</div><div class="cs">linkedin.com/in/ashutosh-borah-4b564821b</div></span><i class="fa-solid fa-arrow-up-right-from-square row-go"></i></a>
+            <a class="c-row" href="https://github.com/ashutoshborah718" target="_blank" rel="noopener"><i class="fa-brands fa-github lead"></i><span class="grow"><div class="ct">GitHub</div><div class="cs">github.com/ashutoshborah718</div></span><i class="fa-solid fa-arrow-up-right-from-square row-go"></i></a>
+            <a class="c-row" href="Ashutosh_Borah_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines lead"></i><span class="grow"><div class="ct">Resume</div><div class="cs">Download PDF</div></span><i class="fa-solid fa-arrow-up-right-from-square row-go"></i></a>
+            <div class="c-row" style="cursor:default"><i class="fa-solid fa-location-dot lead"></i><span class="grow"><div class="ct">Location</div><div class="cs">Jagiroad, Assam, India</div></span></div>
           </div>
         </div>
+      </section>
 
-        <!-- ===== Contact ===== -->
-        <div class="contact reveal" id="contact">
-          <div>
-            <h2>Let's work together</h2>
-            <p>I'm looking for AI/ML, computer vision and research roles and internships. The quickest way to reach me is email.</p>
-            <div class="cta-row" style="margin-top:22px">
-              <a class="btn" style="background:#F5C26B;color:#0B1220" href="mailto:ashutoshborah41@gmail.com"><i class="fa-regular fa-envelope"></i> Email me</a>
-              <a class="btn" style="background:rgba(255,255,255,.08);color:#EEF1F6;border-color:rgba(255,255,255,.16)" href="Ashutosh_Borah_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Resume (PDF)</a>
-            </div>
-          </div>
-          <div class="contact-links">
-            <a href="mailto:ashutoshborah41@gmail.com"><i class="fa-regular fa-envelope"></i><span>ashutoshborah41@gmail.com</span></a>
-            <a href="https://www.linkedin.com/in/ashutosh-borah-4b564821b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
-            <a href="https://github.com/ashutoshborah718" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>github.com/ashutoshborah718</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+      <footer class="foot">© <span id="year">2026</span> Ashutosh Borah</footer>
+    </main>
+  </div>
 
-  <footer>
-    <div class="container foot">
-      <span>© <span id="year">2026</span> Ashutosh Borah · Jagiroad, Assam</span>
-      <span><a href="https://www.instagram.com/ashutosh__borah/" target="_blank" rel="noopener" style="color:inherit"><i class="fa-brands fa-instagram"></i> Instagram</a></span>
-    </div>
-  </footer>
+  <!-- Mobile bottom navigation -->
+  <nav class="bottom-nav" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" data-view="about"><i class="fa-regular fa-user"></i>About</button>
+    <button class="tab" role="tab" data-view="research"><i class="fa-solid fa-flask"></i>Research</button>
+    <button class="tab" role="tab" data-view="background"><i class="fa-solid fa-briefcase"></i>Background</button>
+    <button class="tab" role="tab" data-view="skills"><i class="fa-solid fa-layer-group"></i>Skills</button>
+    <button class="tab" role="tab" data-view="contact"><i class="fa-regular fa-paper-plane"></i>Contact</button>
+  </nav>
 
   <script>
     (function () {
       var root = document.documentElement;
 
-      // Theme: remember the visitor's choice when storage is available
-      var themeBtn = document.getElementById('themeBtn');
+      /* ---------- Views (hash routing, so links and the back button work) ---------- */
+      var VIEWS = ['about', 'research', 'research/ntrnet', 'research/nfrv4', 'research/diffretinex', 'research/fpga', 'background', 'skills', 'contact'];
+      var TITLES = { about: 'About', research: 'Research', background: 'Background', skills: 'Skills', contact: 'Contact',
+        'research/ntrnet': 'NTR-Net', 'research/nfrv4': 'NFR-v4', 'research/diffretinex': 'Diff-Retinex', 'research/fpga': 'FPGA projects' };
+
+      function show(view, fromUser) {
+        if (VIEWS.indexOf(view) === -1) view = 'about';
+        document.querySelectorAll('.view').forEach(function (v) { v.classList.toggle('active', v.id === 'view-' + view); });
+        var section = view.split('/')[0];
+        document.querySelectorAll('.tab').forEach(function (t) {
+          var on = t.dataset.view === section;
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+          t.tabIndex = on ? 0 : -1;
+        });
+        document.title = (view === 'about' ? '' : TITLES[view] + ' · ') + 'Ashutosh Borah — Computer Vision Researcher';
+        if (fromUser) window.scrollTo(0, 0);
+      }
+      function current() { return decodeURIComponent(location.hash.replace(/^#\/?/, '')) || 'about'; }
+      function go(view) {
+        if (current() === view) { show(view, true); return; }
+        location.hash = view;
+      }
+      window.addEventListener('hashchange', function () { show(current(), true); });
+      document.addEventListener('click', function (e) {
+        var t = e.target.closest('[data-view],[data-go]');
+        if (!t) return;
+        e.preventDefault();
+        go(t.dataset.view || t.dataset.go);
+      });
+      // Arrow keys move between tabs
+      document.querySelectorAll('[role="tablist"]').forEach(function (list) {
+        list.addEventListener('keydown', function (e) {
+          if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+          var tabs = Array.prototype.slice.call(list.querySelectorAll('.tab'));
+          var i = tabs.indexOf(document.activeElement); if (i < 0) return;
+          var n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          n.focus(); go(n.dataset.view);
+        });
+      });
+      show(current(), false);
+
+      /* ---------- Theme ---------- */
       function stored() { try { return localStorage.getItem('theme'); } catch (e) { return null; } }
       function isDark() {
         var t = root.getAttribute('data-theme');
         if (t) return t === 'dark';
         return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
       }
-      function syncIcon() { themeBtn.innerHTML = isDark() ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>'; }
+      function syncIcons() {
+        document.querySelectorAll('.theme-btn').forEach(function (b) { b.innerHTML = isDark() ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>'; });
+      }
       var s = stored(); if (s === 'dark' || s === 'light') root.setAttribute('data-theme', s);
-      syncIcon();
-      themeBtn.addEventListener('click', function () {
-        var next = isDark() ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
-        syncIcon();
+      syncIcons();
+      document.querySelectorAll('.theme-btn').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var next = isDark() ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+          syncIcons();
+        });
       });
-
-      // Mobile menu
-      var menuBtn = document.getElementById('menuBtn'), links = document.getElementById('navLinks');
-      menuBtn.addEventListener('click', function () {
-        var open = links.classList.toggle('open');
-        menuBtn.setAttribute('aria-expanded', open);
-        menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-      });
-      links.addEventListener('click', function (e) {
-        if (e.target.tagName === 'A') { links.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'; }
-      });
-
-      // Nav border on scroll + active section
-      var nav = document.getElementById('nav');
-      var sections = ['research', 'experience', 'skills', 'contact'].map(function (id) { return document.getElementById(id); });
-      function onScroll() {
-        nav.classList.toggle('scrolled', window.scrollY > 8);
-        var y = window.scrollY + 120, current = null;
-        sections.forEach(function (sec) { if (sec && sec.getBoundingClientRect().top + window.scrollY <= y) current = sec.id; });
-        links.querySelectorAll('a').forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
-      }
-      window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
-
-      // Hero transform grid: dark at the bottom-left, bright at the top-right
-      var grid = document.getElementById('tgrid'), cols = 12, rows = 15;
-      for (var r = 0; r < rows; r++) {
-        for (var c = 0; c < cols; c++) {
-          var t = Math.min(1, Math.max(0, (c / (cols - 1)) * 0.55 + (1 - r / (rows - 1)) * 0.55 + (Math.random() - 0.5) * 0.16));
-          // night to dawn: navy -> violet -> rose -> amber (never through green)
-          var light = 9 + t * 56, sat = 30 + t * 42, hue = (225 + t * 173) % 360;
-          var cell = document.createElement('span');
-          cell.style.background = 'hsl(' + hue.toFixed(0) + ',' + sat.toFixed(0) + '%,' + light.toFixed(0) + '%)';
-          cell.style.boxShadow = 'inset 0 0 0 0.5px rgba(255,255,255,.06)';
-          grid.appendChild(cell);
-        }
-      }
-
-      // Reveal on scroll and animate the compute bars
-      var max = 26.35;
-      function fillBars() { document.querySelectorAll('.bar-fill').forEach(function (b) { b.style.width = (parseFloat(b.dataset.v) / max * 100) + '%'; }); }
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (en) {
-            if (en.isIntersecting) {
-              if (en.target.id === 'bars') fillBars(); else en.target.classList.add('in');
-              io.unobserve(en.target);
-            }
-          });
-        }, { threshold: 0.08 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-        io.observe(document.getElementById('bars'));
-        // Safety net: never leave content hidden if the observer does not fire
-        setTimeout(function () { document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); }); fillBars(); }, 4000);
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); }); fillBars();
-      }
 
       document.getElementById('year').textContent = new Date().getFullYear();
     })();

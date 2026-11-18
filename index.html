@@ -390,6 +390,9 @@
       overflow: hidden;
       box-shadow: var(--shadow-lg);
       animation: popIn 0.18s ease-out;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
     }
 
     .modal-header {
@@ -416,6 +419,7 @@
     }
 
     .modal-body {
+      overflow-y: auto;
       padding: 20px;
       font-size: 14px;
       color: #334155;
@@ -491,17 +495,17 @@
            class="avatar">
       <div class="profile-meta">
         <h1>Ashutosh Borah</h1>
-        <p class="headline">M.Tech Scholar at NIT Silchar &bull; AI / CV Researcher</p>
+        <p class="headline">M.Tech Scholar at NIT Silchar &bull; AI / CV Researcher &bull; Jagiroad, Assam</p>
         <div class="status-badge">
           <div class="status-dot"></div>
-          Open to AI/ML Software Trainee & Research Roles
+          Open to AI/ML, Computer Vision & Research Roles
         </div>
       </div>
     </header>
 
     <!-- Bio Summary -->
     <p class="intro-paragraph">
-      Master of Technology scholar in <strong>Communication & Signal Processing</strong> at <strong>NIT Silchar</strong>. Specializing in deep learning architectures for low-light image/video restoration, Retinex physical decomposition, attention mechanisms, and <strong>State Space Models (SSM / Mamba)</strong>. Proficient in PyTorch, CUDA environments, and reproducible GPU benchmarking.
+      Master of Technology scholar in <strong>Communication & Signal Processing</strong> at <strong>NIT Silchar</strong>. I design, train and rigorously evaluate deep learning models for <strong>low-light image enhancement</strong>: my dissertation network, <strong>NTR-Net</strong>, is a lightweight model (0.94 M params, 5.56 GMACs) that predicts a grid of local colour transforms, and my <strong>NFR-v4</strong> work benchmarks a neighbourhood-attention block on RetinexFormer with controlled from-scratch A/B trainings. Proficient in <strong>PyTorch</strong>, multi-GPU training, reproducible evaluation and statistical analysis of results.
     </p>
 
     <!-- Primary Actions -->
@@ -525,8 +529,8 @@
       <a href="https://www.instagram.com/ashutosh__borah/" target="_blank" class="social-link">
         <i class="fa-brands fa-instagram" style="color: #E1306C;"></i> Instagram
       </a>
-      <a href="https://drive.google.com/file/d/1vXF4mdI4y7-ZZBCLVcu-vrDmSOAPMad3/view?usp=drivesdk" target="_blank" class="social-link">
-        <i class="fa-brands fa-google-drive" style="color: #0F9D58;"></i> Drive
+      <a href="https://drive.google.com/file/d/1XCXuSjE-eWHX20HTxe_Foa2o3kXYX3jV/view?usp=drivesdk" target="_blank" class="social-link">
+        <i class="fa-solid fa-award" style="color: #B45309;"></i> Certificate
       </a>
     </div>
 
@@ -536,38 +540,38 @@
     </div>
 
     <!-- Project 1 -->
-    <div class="project-card" onclick="openProject('joint_nfr')">
+    <div class="project-card" onclick="openProject('ntrnet')">
       <div class="card-top">
-        <span class="project-title">Darkness-Aware Joint-NFR</span>
-        <span class="project-tag">M.Tech Thesis</span>
+        <span class="project-title">NTR-Net: Neighbourhood Transform Refinement Network</span>
+        <span class="project-tag">M.Tech Dissertation</span>
       </div>
       <p class="project-body">
-        Custom 743K+ parameter encoder-decoder network (NFNet) with patch-partitioning, QKV cross-attention, gated fusion, and iterative neighborhood feature refinement.
+        Lightweight low-light enhancement network (0.94 M params, 5.56 GMACs) that predicts a grid of local colour transforms. <strong>23.33 ± 0.32 dB PSNR / 0.834 SSIM</strong> on LOL-v1 over two seeds, with about 2.8× less compute than RetinexFormer.
       </p>
       <div class="card-bottom">
         <div class="tags-container">
           <span class="tech-pill">PyTorch</span>
-          <span class="tech-pill">LOLv1 Dataset</span>
-          <span class="tech-pill">110K Iterations</span>
+          <span class="tech-pill">LOL-v1 / v2</span>
+          <span class="tech-pill">Ablations</span>
         </div>
         <span class="action-text">Inspect Details <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></span>
       </div>
     </div>
 
     <!-- Project 2 -->
-    <div class="project-card" onclick="openProject('retinexformer')">
+    <div class="project-card" onclick="openProject('nfrv4')">
       <div class="card-top">
-        <span class="project-title">RetinexFormer Architecture Analysis</span>
-        <span class="project-tag">Computer Vision</span>
+        <span class="project-title">NFR-v4 + HVI on RetinexFormer</span>
+        <span class="project-tag">M.Tech Research</span>
       </div>
       <p class="project-body">
-        Replicated illumination-guided decomposition networks on Kaggle; benchmarks directional State Space Models (SSM/Mamba) and non-local spatial context.
+        Audit and redesign of a neighbourhood-attention refinement block, tested with controlled from-scratch A/B trainings (150K iterations, 2× T4): <strong>+0.74 dB PSNR</strong> over plain RetinexFormer on LOL-v2-Synthetic.
       </p>
       <div class="card-bottom">
         <div class="tags-container">
-          <span class="tech-pill">Vision Transformers</span>
-          <span class="tech-pill">SSM / Mamba</span>
-          <span class="tech-pill">Benchmarking</span>
+          <span class="tech-pill">Attention</span>
+          <span class="tech-pill">HVI Colour Space</span>
+          <span class="tech-pill">A/B Benchmarking</span>
         </div>
         <span class="action-text">Inspect Details <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></span>
       </div>
@@ -611,6 +615,19 @@
       </div>
     </div>
 
+    <!-- Experience Section -->
+    <div class="section-head" style="margin-top: 36px;">
+      <div class="section-title">Experience</div>
+    </div>
+
+    <div class="edu-card">
+      <div>
+        <div class="edu-title">VLSI Design & FPGA Intern — MoCITE Technology</div>
+        <div class="edu-meta">Center of Excellence in VLSI Design &bull; Verilog HDL, RTL design, simulation and FPGA hardware testing &bull; <a href="https://drive.google.com/file/d/1XCXuSjE-eWHX20HTxe_Foa2o3kXYX3jV/view?usp=drivesdk" target="_blank" style="color: var(--primary); font-weight: 600; text-decoration: none;">View certificate</a></div>
+      </div>
+      <div class="edu-year">Jun 2023</div>
+    </div>
+
     <!-- Education Section -->
     <div class="section-head" style="margin-top: 36px;">
       <div class="section-title">Education & Credentials</div>
@@ -647,11 +664,13 @@
 
     <div class="skills-grid">
       <div class="skill-card"><i class="fa-brands fa-python"></i> Python / PyTorch</div>
-      <div class="skill-card"><i class="fa-solid fa-brain"></i> Vision Mamba (SSM)</div>
       <div class="skill-card"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+      <div class="skill-card"><i class="fa-solid fa-moon"></i> Low-Light Enhancement</div>
+      <div class="skill-card"><i class="fa-solid fa-flask"></i> Ablations & Statistics</div>
+      <div class="skill-card"><i class="fa-solid fa-server"></i> Multi-GPU Training</div>
+      <div class="skill-card"><i class="fa-solid fa-brain"></i> Vision Mamba (SSM)</div>
       <div class="skill-card"><i class="fa-solid fa-wave-square"></i> Signal Processing</div>
       <div class="skill-card"><i class="fa-solid fa-microchip"></i> Verilog HDL / Vivado</div>
-      <div class="skill-card"><i class="fa-solid fa-chart-line"></i> Kaggle GPU Pipelines</div>
     </div>
 
     <footer>
@@ -677,40 +696,59 @@
       <div class="modal-header">
         <h3>Curriculum Vitae — Ashutosh Borah</h3>
         <div style="display: flex; align-items: center; gap: 14px;">
-          <a href="https://drive.google.com/file/d/1vXF4mdI4y7-ZZBCLVcu-vrDmSOAPMad3/view?usp=drivesdk" target="_blank" style="font-size: 13px; font-weight: 600; color: #2563EB; text-decoration: none;">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Drive
+          <a href="Ashutosh_Borah_Resume.pdf" target="_blank" style="font-size: 13px; font-weight: 600; color: #2563EB; text-decoration: none;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open PDF
           </a>
           <button class="close-btn" onclick="closeResume()">&times;</button>
         </div>
       </div>
-      <iframe class="resume-frame" src="https://drive.google.com/file/d/1vXF4mdI4y7-ZZBCLVcu-vrDmSOAPMad3/preview" allow="autoplay"></iframe>
+      <iframe class="resume-frame" src="Ashutosh_Borah_Resume.pdf" title="Resume of Ashutosh Borah"></iframe>
     </div>
   </div>
 
   <script>
     const projectDetails = {
-      joint_nfr: {
-        title: "Darkness-Aware Joint-NFR (M.Tech Thesis)",
+      ntrnet: {
+        title: "NTR-Net (M.Tech Dissertation)",
         body: `
           <h4>Research Problem</h4>
-          <p>Standard low-light image enhancement models suffer from color distortion and amplified high-frequency sensor noise under extreme darkness.</p>
-          <h4>Architectural Implementation</h4>
+          <p>State-of-the-art low-light enhancement models are heavy, and error studies show most of their remaining error is per-image brightness and tone rather than noise. NTR-Net targets this with a lightweight design that predicts a grid of local colour transforms.</p>
+          <h4>Design &amp; Results</h4>
           <ul>
-            <li><strong>NFNet (743K+ params):</strong> Lightweight custom encoder-decoder leveraging patch-partitioning to capture local and non-local contexts simultaneously.</li>
-            <li><strong>Cross-Attention & Refinement:</strong> QKV spatial cross-attention layers with gated feature fusion to selectively propagate structural priors.</li>
-            <li><strong>GPU Training:</strong> Trained up to 110,000 iterations on the LOLv1 benchmark with live augmentations, checkpointing, and PSNR/SSIM validation on Kaggle GPUs.</li>
+            <li><strong>Efficient:</strong> 0.94 M parameters and 5.56 GMACs at 256×256 (RetinexFormer: 15.85 G, HVI-CIDNet: 7.57 G).</li>
+            <li><strong>LOL-v1:</strong> 23.33 ± 0.32 dB PSNR, 0.834 SSIM, 26.53 dB GT-mean PSNR (mean of two seeds, standard protocol).</li>
+            <li><strong>LOL-v2:</strong> 24.09 dB / 0.919 on Synthetic and 20.55 dB / 0.837 on Real.</li>
+          </ul>
+          <h4>Method</h4>
+          <ul>
+            <li>Headroom study: a perfect 16×16×8 transform grid reaches 30.3 dB on LOL-v1, so the grid idea has room to grow.</li>
+            <li>Multi-run ablation chains and one-factor-at-a-time probes; only changes that beat seed noise were kept (a +0.77 dB result was traced to seed luck and dropped).</li>
+            <li>Generalisation checked on 109 unseen images from other cameras (LSRW, LOL-v2 new scenes).</li>
+            <li>Automated training and evaluation on a laptop RTX 4050 and Kaggle; IEEE paper draft in progress.</li>
           </ul>
         `
       },
-      retinexformer: {
-        title: "RetinexFormer Architecture Analysis",
+      nfrv4: {
+        title: "NFR-v4 + HVI on RetinexFormer",
         body: `
-          <h4>Investigation Scope</h4>
-          <p>In-depth architectural reproduction and forward-pass analysis of Retinex-based Transformer decomposition models.</p>
-          <h4>Key Insights</h4>
+          <h4>Question</h4>
+          <p>Does a neighbourhood-attention refinement block (NFR) really improve RetinexFormer when both are trained the same way from scratch?</p>
+          <h4>Audit of the earlier prototype</h4>
           <ul>
-            <li>Verified gradient flow and tensor memory consumption across LOL datasets on Kaggle.</li>
-            <li>Benchmarked illumination estimation against State Space Models (Vision Mamba) to explore linear-complexity spatial token processing.</li>
+            <li>Resizing test images to 256×256 had inflated PSNR by 1.3 dB, and the block crashed on non-square images.</li>
+            <li>Rebuilt a full-resolution evaluation that reproduces the published RetinexFormer result (25.16 dB / 0.845).</li>
+          </ul>
+          <h4>NFR-v4 redesign</h4>
+          <ul>
+            <li>4-head attention over the own patch plus 8 neighbours, relative-position bias, zero-initialised residual and an HVI-guided gate.</li>
+            <li>59% fewer added parameters than the old block; checked with an automated CPU test suite before any GPU run.</li>
+          </ul>
+          <h4>Results</h4>
+          <ul>
+            <li>Controlled A/B trainings from scratch (150K iterations, official recipe, same seed, 2× T4 GPUs in parallel).</li>
+            <li><strong>LOL-v2-Synthetic:</strong> 25.95 vs 25.21 dB (+0.74 dB PSNR, +0.55 dB GT-mean); LOL-v1 is a tie within seed variance.</li>
+            <li>Error-budget analysis with paired standard errors: about 8 dB of the remaining error is a global tone curve, and all of NFR's gain lies there.</li>
+            <li>HSV brightness augmentation kept 22.18 dB (vs 17.42 dB) when the input exposure is halved.</li>
           </ul>
         `
       },
